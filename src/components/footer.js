@@ -1,29 +1,26 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
 const Footer = ({ siteTitle }) => (
-  <div className="footer">
-    <span className="block">
-      &copy; {new Date().getFullYear()} {siteTitle}
-    </span>
-    <span className="block">
-      <small>
-        {` </>`} Powered by {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a> and{` `}
-        <a href="https://github.com/wangonya/the-plain-gatsby">
-          The Plain Gatsby starter
-        </a>
-      </small>
-    </span>
-  </div>
-)
+   <div className="w-full h-24 absolute bottom-0 px-5 bg-julian-red text-white flex items-center">
+      <span className="inline-block">
+         <small>
+            {` </>`} Powered by {`  `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+         </small>
+      </span>
+      <span className="inline-block absolute right-0 pr-5">
+         &copy; {new Date().getFullYear()} {siteTitle}
+      </span>
+   </div>
+);
 
 Footer.propTypes = {
-  siteTitle: PropTypes.string,
-}
+   siteTitle: PropTypes.string,
+};
 
 Footer.defaultProps = {
-  siteTitle: ``,
-}
+   siteTitle: ``,
+};
 
-export default Footer
+export default Footer;

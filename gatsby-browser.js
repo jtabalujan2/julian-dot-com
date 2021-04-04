@@ -3,5 +3,5 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
-
+ import './src/styles/global.css';
 require("prismjs/themes/prism.css")

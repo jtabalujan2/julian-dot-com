@@ -5,38 +5,41 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
 
-import Header from ".././components/header"
-import Footer from ".././components/footer"
-import "../styles/styles.scss"
+import Header from ".././components/header";
+import Footer from ".././components/footer";
 
 const DefaultLayout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-            avatar
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Header avatar={data.site.siteMetadata.avatar} />
-        <div id="content">{children}</div>
-        <Footer siteTitle={data.site.siteMetadata.title} />
-      </>
-    )}
-  />
-)
+   <StaticQuery
+      query={graphql`
+         query SiteTitleQuery {
+            site {
+               siteMetadata {
+                  title
+                  avatar
+               }
+            }
+         }
+      `}
+      render={(data) => (
+         <>
+            <div className="h-full">
+               <Header />
+               <div className="bg-julian-navy absolute overflow-auto top-24 bottom-24 w-full">
+                  {children}
+               </div>
+               <Footer siteTitle={data.site.siteMetadata.title} />
+            </div>
+         </>
+      )}
+   />
+);
 
 DefaultLayout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+   children: PropTypes.node.isRequired,
+};
 
-export default DefaultLayout
+export default DefaultLayout;

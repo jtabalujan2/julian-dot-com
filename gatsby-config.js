@@ -1,12 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `The Plain Gatsby`,
-    description: `A simple minimalist starter for your personal blog.`,
+    title: `Julian Tabalujan`,
     author: `@wangonya`,
     avatar: `https://avatars0.githubusercontent.com/u/19375569?s=460&v=4`,
     siteUrl: `https://the-plain-gatsby.netlify.com`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-feed`,
+    `gatsby-plugin-sharp`,
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -30,7 +34,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -38,9 +41,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-feed`,
-    `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -48,7 +49,6 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
