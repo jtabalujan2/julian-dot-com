@@ -26,11 +26,9 @@ const DefaultLayout = ({ children }) => (
       `}
       render={(data) => (
          <>
-            <div className="h-full">
+            <div className="h-screen">
                <Header />
-               <div className="bg-julian-navy absolute overflow-auto top-24 bottom-24 w-full">
-                  {children}
-               </div>
+               <div>{children}</div>
                <Footer siteTitle={data.site.siteMetadata.title} />
             </div>
          </>

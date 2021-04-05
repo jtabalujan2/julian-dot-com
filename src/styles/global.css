@@ -2,11 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+   .text-gradient {
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+   }
+}
+
+* {
+   box-sizing: border-box;
+}
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+}
+
+div {
+   /* height: 100vh;
+   width: 100vw; */
+   /* ... */
+}
+
 a {
    color: white;
 }
 
 a:hover,
 a:active {
-   @apply text-julian-orange;
+   @apply text-gradient bg-gradient-to-r from-julian-orange to-julian-red;
 }

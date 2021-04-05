@@ -26,20 +26,13 @@ const IndexPage = ({ data }) => {
          </li>
       ));
 
-   const postsListContainer = groupBy(posts, getDateYear)
-      .map(({ year, posts }, i) => (
-         <div key={i}>
-            <h4 className="code">{year}</h4>
-            {postsList(posts)}
-         </div>
-      ))
-      .reverse();
    return (
       <DefaultLayout>
          <SEO title="Home" />
-         <div>yolo</div>
-         <div>yolo</div>
-         <section>{/* <ul>{postsListContainer}</ul> */}</section>
+         <div className="flex-col bg-julian-navy absolute overflow-auto top-24 bottom-24 w-full">
+            <div className="h0"></div>
+            <div className="h-full w-6/12 bg-gradient-to-r from-julian-orange to-julian-red inline-flex"></div>
+         </div>
       </DefaultLayout>
    );
 };
