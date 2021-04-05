@@ -30,9 +30,19 @@ const IndexPage = ({ data }) => {
       <DefaultLayout>
          <SEO title="Home" />
          <div className="flex-col bg-julian-navy absolute overflow-auto top-24 bottom-24 w-full">
-            <div className="h-full w-6/12 bg-gradient-to-r from-julian-orange to-julian-red inline-flex absolute"></div>
+            <div className="h-full w-5/12 bg-gradient-to-r from-julian-orange to-julian-red inline-flex absolute"></div>
             <div className="flex items-center justify-center h-full">
-               <div className="h-3/5 w-3/5 bg-white z-10"></div>
+               <div className="h-3/5 w-3/5 z-10 flex">
+                  <div className="bg-gradient-to-r from-julian-red to-julian-red w-6/12 h-full shadow-lg rounded-md"></div>
+                  <div className="bg-julian-med-grey text-white w-6/12 h-full shadow-lg rounded-md">
+                     <div className="mt-12 ml-10 ">
+                        <h1 className="text-9xl font-bold tracking-tight">
+                           Hello
+                        </h1>
+                        <h3 className="text-2xl mt-6">{`Here's who I am & what I do`}</h3>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </DefaultLayout>
