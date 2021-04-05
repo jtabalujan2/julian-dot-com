@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
    return (
       <DefaultLayout>
          <SEO title="Home" />
-         <div className="flex-col bg-julian-navy absolute overflow-auto top-24 bottom-24 w-full">
+         <div className="flex-col absolute bg-julian-navy top-24 bottom-24 w-full">
             <div className="h-full w-5/12 bg-gradient-to-r from-julian-orange to-julian-red inline-flex absolute"></div>
             <div className="flex items-center justify-center h-full">
                <div className="h-3/5 w-3/5 z-10 flex">
