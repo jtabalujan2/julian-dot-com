@@ -1,16 +1,6 @@
 <h1 align="center">
-  The Plain Gatsby
+  Julian's Personal Website
 </h1>
-
-A minimalist Gatsby starter for your blog. [Demo](https://the-plain-gatsby.netlify.com/).
-
-Inspired by [Heiswayi Nrird](https://github.com/heiswayi)'s [the-plain](https://github.com/heiswayi/the-plain).
-
-![home-page-screenshot](https://i.postimg.cc/7YPxnrJM/Screenshot-2019-05-25-at-18-33-36.png)
-
-![about-page-screenshot](https://i.postimg.cc/SK9qxyHq/Screenshot-2019-05-25-at-18-34-12.png)
-
-![blog-page-screenshot](https://i.postimg.cc/CxzS9CNR/Screenshot-2019-05-25-at-18-34-00.png)
 
 ## Quick Start 🚀
 
